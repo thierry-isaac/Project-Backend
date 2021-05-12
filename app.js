@@ -95,5 +95,6 @@ mongoose.connect(process.env.CONNECTION_STRING, {
 //Production
 var server = app.listen(process.env.PORT || 3000, function(){
     var port = server.address().port;
+    console.log("Database_URL", process.env.CONNECTION_STRING);
     console.log("Express is working on port +"+port)
 })
